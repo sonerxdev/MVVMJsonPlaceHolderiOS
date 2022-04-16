@@ -16,6 +16,7 @@
 		5BAF9A30280B1F80002E17D4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF9A2F280B1F80002E17D4 /* PostTableViewCell.swift */; };
 		5BAF9A36280B2DE8002E17D4 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF9A35280B2DE8002E17D4 /* PostModel.swift */; };
 		5BAF9A38280B3144002E17D4 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF9A37280B3144002E17D4 /* PostService.swift */; };
+		5BAF9A3A280B3A3E002E17D4 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF9A39280B3A3E002E17D4 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5BAF9A2F280B1F80002E17D4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		5BAF9A35280B2DE8002E17D4 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		5BAF9A37280B3144002E17D4 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		5BAF9A39280B3A3E002E17D4 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,7 @@
 		5BAF9A33280B2D49002E17D4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5BAF9A37280B3144002E17D4 /* PostService.swift */,
+				5BAF9A39280B3A3E002E17D4 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 		5BAF9A34280B2D5B002E17D4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				5BAF9A37280B3144002E17D4 /* PostService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BAF9A20280B1C4F002E17D4 /* ViewController.swift in Sources */,
+				5BAF9A3A280B3A3E002E17D4 /* PostViewModel.swift in Sources */,
 				5BAF9A38280B3144002E17D4 /* PostService.swift in Sources */,
 				5BAF9A36280B2DE8002E17D4 /* PostModel.swift in Sources */,
 				5BAF9A1C280B1C4F002E17D4 /* AppDelegate.swift in Sources */,
