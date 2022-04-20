@@ -23,7 +23,6 @@ class PostService {
                 if let postList = postList {
                     completion(postList)
                 }
-                debugPrint(postList)
             }
         }.resume()
         

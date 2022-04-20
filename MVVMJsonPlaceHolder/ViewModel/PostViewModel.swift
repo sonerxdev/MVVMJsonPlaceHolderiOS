@@ -23,7 +23,8 @@ extension PostListViewModel {
     func postAtIndex(_ index: Int) -> PostViewModel{
         let post = self.postList[index]
         return PostViewModel(post: post)
-        }
+        
+    }
 }
 
 
