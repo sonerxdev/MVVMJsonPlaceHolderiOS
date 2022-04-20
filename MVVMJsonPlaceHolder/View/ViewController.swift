@@ -11,16 +11,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     private var postListViewModel: PostListViewModel!
-   
+    private var selectedBody: String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         tableView.delegate = self
         tableView.dataSource = self
         
        getData()
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let postViewModel = self.postListViewModel.postAtIndex(indexPath.row)
+        self.selectedBody = postViewModel.body
+        performSegue(withIdentifier: "toDetailVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailVC" {
+            let destination = segue.destination as! DetailViewController
+
+            destination.selectedBodyTxt = selectedBody
+        }
     }
     
     func getData(){
@@ -44,7 +60,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
         let postViewModel = self.postListViewModel.postAtIndex(indexPath.row)
-        
         cell.idTxt.text = String(postViewModel.id)
         cell.titleTxt.text = postViewModel.title
         

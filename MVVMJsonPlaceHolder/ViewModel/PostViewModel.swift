@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct PostListViewModel {
+struct PostListViewModel {	
     let postList : [PostModel]
     
    
@@ -46,4 +46,5 @@ extension PostViewModel {
     var body : String {
         return self.post.body
     }
+    
 }
